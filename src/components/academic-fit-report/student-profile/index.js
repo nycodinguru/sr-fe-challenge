@@ -11,7 +11,7 @@ export function StudentProfile({ student }) {
 
     setTimeout(() => {
       setProfileImage(student?.profile_image)
-    }, 30000)
+    }, 20000)
   }, [student])
 
   return (

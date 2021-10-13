@@ -158,7 +158,6 @@ export function Table({ data, headers, gpa }) {
       <table className="table">
         <tbody className="table__body">
           {data ? renderTable() : <NoData />}
-          {/* {renderTable()} */}
         </tbody>
       </table>
       <div className="table__legend">
