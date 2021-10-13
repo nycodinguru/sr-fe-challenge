@@ -1,0 +1,98 @@
+@import "../../../styles/breakpoints";
+
+.student-profile {
+  display: flex;
+  padding: 65px 10px 65px 0;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &__left {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__profile-image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 500px;
+    height: 105px;
+    width: 105px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+
+    @include mobile {
+      margin: 40px auto;
+      height: 250px;
+      width: 250px;
+    }
+
+    &.render-initials {
+      color: #6082fa;
+      background: #ffa94d;
+    }
+  }
+
+  &__info {
+    &--header {
+      color: var(--color-primary);
+      font-size: 1.3rem;
+    }
+
+    &--item {
+      margin-top: 10px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &--column {
+      &.first-column {
+        margin-right: 80px;
+
+        @include mobile {
+          margin: 0;
+        }
+      }
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 230px;
+    height: 57px;
+    background-image: url("../../../assets/images/logos/sr-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__header {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+}

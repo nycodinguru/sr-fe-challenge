@@ -1,0 +1,87 @@
+.table {
+  background-color: #fff;
+  width: 99%;
+  min-width: 600px;
+  max-height: 600px;
+  height: 80vh;
+  border-spacing: 0;
+  color: #000;
+
+  &__container {
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+
+    &.gpa::before {
+      content: "GPA";
+    }
+  }
+
+  &__header,
+  &__data {
+    padding: 0 10px;
+    text-align: center;
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  &__data {
+    font-size: 0.85rem;
+
+    &.a {
+      background-color: #d7737d;
+    }
+
+    &.b {
+      background-color: #c194b5;
+    }
+
+    &.c {
+      background-color: #b4a7d6;
+    }
+
+    &.d {
+      background-color: #a6a8da;
+    }
+
+    &.e {
+      background-color: #75ace5;
+    }
+  }
+
+  &__headers {
+    font-weight: bold;
+    height: 3rem;
+  }
+
+  &__row {
+    &--no-data {
+      text-align: center;
+      font-size: 1.8rem;
+      opacity: 0.5;
+    }
+
+    &:nth-of-type(odd) {
+      background-color: #e8f0fe;
+    }
+  }
+
+  &__legend {
+    margin-top: 150px;
+    font-weight: 500;
+    font-size: 0.85rem;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}
